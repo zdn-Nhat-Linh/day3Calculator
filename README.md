@@ -4,4 +4,4 @@
 
 ## How to run
 
-### you can run with main.js or mainWithTS, if you want to run wit ts you need to compile it with tsc mainWithTS.ts, and add this line in the html file
+### You can run with main.js or mainWithTS, if you want to run wit ts you need to compile it with tsc mainWithTS.ts, and add this line in the html file
