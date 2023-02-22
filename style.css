@@ -1,0 +1,128 @@
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+input,
+textarea,
+select,
+button {
+	outline: none;
+}
+input {
+	line-height: normal;
+}
+label,
+button {
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+li {
+	list-style-type: none;
+}
+
+body {
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	color: #333;
+	background-color: #fff;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+	min-height: 100vh;
+	background-color: #333;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.calculator {
+	width: 100%;
+	max-width: 500px;
+	background-color: #fff;
+	color: #333;
+	padding: 2rem;
+	border-radius: 1rem;
+}
+
+#result {
+	width: 100%;
+	height: 6rem;
+	font-size: 2rem;
+	padding: 0 2rem;
+	text-align: right;
+	background-color: #ccc;
+	border: none;
+	border-radius: 1rem;
+}
+
+.keyboard {
+	margin-top: 2rem;
+	/* display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1rem; */
+	display: flex;
+}
+
+.left {
+	width: 75%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+	margin-right: 5px;
+}
+
+.h-20 {
+	height: 11rem !important;
+}
+
+.right {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 5px;
+}
+
+.right-up button {
+	margin-bottom: 1rem;
+}
+
+.button-char {
+	width: 100%;
+	height: 5rem;
+	font-size: 2rem;
+	border: none;
+	border-radius: 1rem;
+	background-color: #333;
+	color: #fff;
+}
+
+.button-char:hover {
+	background-color: #ccc;
+	color: #333;
+	transition: all 0.3s ease;
+}
+
+.bg-red {
+	background-color: red;
+}
