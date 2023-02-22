@@ -10,38 +10,37 @@
 	<body>
 		<div class="container">
 			<div class="calculator">
-				<input type="text" id="result" class="content" disabled />
+				<input placeholder="0" type="text" id="result" disabled />
 				<div class="keyboard">
 					<div class="left">
-						<button onclick="clean()" class="button-char bg-red">C</button>
-						<button onclick="back()" class="button-char">&larr;</button>
-						<button onclick="insert(`${Math.PI}`)" class="button-char">Pi</button>
-						<button onclick="insert('7')" class="button-char">7</button>
-						<button onclick="insert('8')" class="button-char">8</button>
-						<button onclick="insert('9')" class="button-char">9</button>
-						<button onclick="insert('4')" class="button-char">4</button>
-						<button onclick="insert('5')" class="button-char">5</button>
-						<button onclick="insert('6')" class="button-char">6</button>
-						<button onclick="insert('1')" class="button-char">1</button>
-						<button onclick="insert('2')" class="button-char">2</button>
-						<button onclick="insert('3')" class="button-char">3</button>
-						<button onclick="insert('0')" class="button-char">0</button>
-						<button onclick="insert('.')" class="button-char">.</button>
-						<button onclick="calculate()" class="button-char">=</button>
+						<button onclick="operate('clean')" class="button-char bg-red">C</button>
+						<button onclick="operate('back')" class="button-char">&larr;</button>
+						<button onclick="operate(`${Math.PI}`)" class="button-char">pi</button>
+						<button onclick="operate('7')" class="button-char">7</button>
+						<button onclick="operate('8')" class="button-char">8</button>
+						<button onclick="operate('9')" class="button-char">9</button>
+						<button onclick="operate('4')" class="button-char">4</button>
+						<button onclick="operate('5')" class="button-char">5</button>
+						<button onclick="operate('6')" class="button-char">6</button>
+						<button onclick="operate('1')" class="button-char">1</button>
+						<button onclick="operate('2')" class="button-char">2</button>
+						<button onclick="operate('3')" class="button-char">3</button>
+						<button onclick="operate('0')" class="button-char">0</button>
+						<button onclick="operate('.')" class="button-char">.</button>
+						<button onclick="operate('calculate')" class="button-char">=</button>
 					</div>
 					<div class="right">
 						<div class="right-up">
-							<button onclick="insert('/')" class="button-char">/</button>
-							<button onclick="insert('*')" class="button-char">x</button>
-							<button onclick="insert('-')" class="button-char">-</button>
+							<button onclick="operate('/')" class="button-char">/</button>
+							<button onclick="operate('*')" class="button-char">x</button>
+							<button onclick="operate('-')" class="button-char">-</button>
 						</div>
-						<div class="">
-							<button onclick="insert('+')" class="button-char h-20">+</button>
-						</div>
+						<button onclick="operate('+')" class="button-char h-11">+</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</body>
-	<script src="./main.js"></script>
+	<script src="./mainWithTS.js"></script>
+	<!-- <script src="./main.js"></script>  -->
 </html>

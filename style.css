@@ -37,17 +37,11 @@ li {
 body {
 	font-family: "Noto Sans KR", sans-serif;
 	font-size: 1.6rem;
-	line-height: 1.5;
-	color: #333;
-	background-color: #fff;
+	background-color: #9d8afe;
 }
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 1rem;
 	min-height: 100vh;
-	background-color: #333;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -58,7 +52,7 @@ body {
 .calculator {
 	width: 100%;
 	max-width: 500px;
-	background-color: #fff;
+	background-color: #ff88a7;
 	color: #333;
 	padding: 2rem;
 	border-radius: 1rem;
@@ -70,16 +64,13 @@ body {
 	font-size: 2rem;
 	padding: 0 2rem;
 	text-align: right;
-	background-color: #ccc;
+	background-color: #fff;
 	border: none;
 	border-radius: 1rem;
 }
 
 .keyboard {
 	margin-top: 2rem;
-	/* display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 1rem; */
 	display: flex;
 }
 
@@ -91,7 +82,7 @@ body {
 	margin-right: 5px;
 }
 
-.h-20 {
+.h-11 {
 	height: 11rem !important;
 }
 
@@ -113,16 +104,16 @@ body {
 	font-size: 2rem;
 	border: none;
 	border-radius: 1rem;
-	background-color: #333;
-	color: #fff;
+	background-color: #fff;
 }
 
 .button-char:hover {
-	background-color: #ccc;
-	color: #333;
+	background-color: #9d8afe;
+	color: #fff;
 	transition: all 0.3s ease;
 }
 
 .bg-red {
 	background-color: red;
+	color: white;
 }
