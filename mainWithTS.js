@@ -17,6 +17,7 @@ function operate(char) {
             }
             catch (e) {
                 alert("You have entered an invalid expression");
+                inputElement.value = "";
             }
             break;
         default:
@@ -24,24 +25,27 @@ function operate(char) {
     }
 }
 // class Calculator {
-// 	private result: HTMLInputElement;
+// 	private inputElement: HTMLInputElement;
 // 	constructor() {
-// 		this.result = document.getElementById("result") as HTMLInputElement;
+// 		this.inputElement = document.getElementById("result") as HTMLInputElement;
 // 	}
 // 	insert = (char: string): void => {
-// 		this.result.value += char;
+// 		this.inputElement.value += char;
 // 	};
 // 	back = (): void => {
-// 		this.result.value = this.result.value.slice(0, -1);
+// 		this.inputElement.value = this.inputElement.value.slice(0, -1);
 // 	};
 // 	clean = (): void => {
-// 		this.result.value = "";
+// 		this.inputElement.value = "";
 // 	};
 // 	calculate = (): void => {
 // 		try {
-// 			this.result.value ? (this.result.value = eval(this.result.value)) : (this.result.value = "0");
+// 			this.inputElement.value
+// 				? (this.inputElement.value = eval(this.inputElement.value))
+// 				: (this.inputElement.value = "0");
 // 		} catch (e) {
 // 			alert("You have entered an invalid expression");
+// 			this.inputElement.value = "";
 // 		}
 // 	};
 // }
